@@ -49,7 +49,7 @@
 <meta itemprop="name" content="整数反转">
 <meta itemprop="description" content="整数反转 - LeetCode 07 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。 如果反转后整数超过 32 位的有符号整数的范围 [−231, 231 − 1] ，就返"><meta itemprop="datePublished" content="2021-03-11T17:37:16&#43;08:00" />
 <meta itemprop="dateModified" content="2021-03-11T17:37:16&#43;08:00" />
-<meta itemprop="wordCount" content="170">
+<meta itemprop="wordCount" content="164">
 <meta itemprop="keywords" content="数学," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="整数反转"/>
 <meta name="twitter:description" content="整数反转 - LeetCode 07 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。 如果反转后整数超过 32 位的有符号整数的范围 [−231, 231 − 1] ，就返"/>
@@ -130,7 +130,7 @@
       <div class="post-meta">
         <span class="post-time"> 2021-03-11 17:37 </span>
         
-          <span class="more-meta"> 约 170 字 </span>
+          <span class="more-meta"> 约 164 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -178,14 +178,12 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
-</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">func reverse(x int) int {
     var res int
     for x != 0 {
-        res = x % 10 
-        // [-2 ^ 31 , 2 ^ 31 -1]
+        res = res * 10 +  x % 10 
         if !(-(1&lt;&lt;31) &lt;= res &amp;&amp; res &lt;= (1&lt;&lt;31)-1) {
 			return 0
 		}
