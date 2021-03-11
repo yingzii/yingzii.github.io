@@ -22,7 +22,7 @@
       <pubDate>Thu, 11 Mar 2021 17:37:16 +0800</pubDate>
       
       <guid>https://ilog.vip/post/test/</guid>
-      <description>netstat -na | awk ‘/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}’ //查看TCP状态 lianjie 引用</description>
+      <description>整数反转 - LeetCode 07 给你一个 32 位的有符号整数 x ，返回将 x 中的数字部分反转后的结果。 如果反转后整数超过 32 位的有符号整数的范围 [−231, 231 − 1] ，就返</description>
     </item>
     
   </channel>
